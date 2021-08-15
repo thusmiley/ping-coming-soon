@@ -7,10 +7,66 @@
     <meta property="og:title" content="Ping Coming Soon" />
     <meta property="og:description" content="Ping Coming Soon" />
     <meta property="og:image" content="images/desktop-preview.jpg" />
-    <meta property="og:url" content="" />
+    <meta
+      property="og:url"
+      content="https://thusmiley.github.io/ping-coming-soon/"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <link rel="icon" href="./images/favicon-32x32.png" />
     <link rel="stylesheet" href="./style.css" />
     <title>Ping Coming Soon</title>
   </head>
-  <body></body>
+  <body>
+    <div id="container">
+      <div id="header">
+        <img class="logo" src="./images/logo.svg" alt="" />
+      </div>
+      <div id="main">
+        <h1 class="heading">We are launching <span>soon!</span></h1>
+        <p class="description">Subscribe and get notified</p>
+        <form class="signup" name="form" action="#">
+          <div class="input">
+            <input
+              type="email"
+              name="email"
+              class="email"
+              id="email"
+              placeholder="Your email address..."
+            />
+            <br />
+            <span class="error" id="error"
+              >Please provide a valid email address</span
+            >
+          </div>
+          <button
+            type="submit"
+            name="submit"
+            class="submit"
+            onClick="Validate(document.form.email)"
+          >
+            Notify Me
+          </button>
+        </form>
+        <img
+          class="dashboard"
+          src="./images/illustration-dashboard.png"
+          alt="dashboard"
+        />
+      </div>
+      <div id="footer">
+        <div class="share">
+          <i class="fab fa-facebook-f fb"></i>
+          <i class="fab fa-twitter twitter"></i>
+          <i class="fab fa-instagram insta"></i>
+        </div>
+        <p class="copyright">© Copyright Ping. All rights reserved.</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
